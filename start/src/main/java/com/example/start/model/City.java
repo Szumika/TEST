@@ -15,11 +15,11 @@ import javax.persistence.ManyToOne;
 @Getter
 @Entity
 public class City {
-@Id
+    @Id
     private Long cityId;
     private String city;
     @ManyToOne
-    @JoinColumn(name="country_id")
+    @JoinColumn(name = "country_id")
     private Country country;
 
 }

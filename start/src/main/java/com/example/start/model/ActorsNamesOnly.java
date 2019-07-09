@@ -5,5 +5,5 @@ import lombok.Value;
 
 @Value
 public class ActorsNamesOnly {
-String firstName, lastName;
+    String firstName, lastName;
 }

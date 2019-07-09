@@ -24,23 +24,14 @@ public class Actor {
     @JsonBackReference
     private Set<Film> films = new HashSet<>();
 
-    public Actor(String firstName, String lastName, Set<Film> films) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.films = films;
-    }
-
     public Actor(String firstName, String lastName, Film films) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.films.add(films) ;
+        this.films.add(films);
     }
 
-    public Actor(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-    public void addFilm(Film film){
+
+    public void addFilm(Film film) {
         this.films.add(film);
     }
 }

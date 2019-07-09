@@ -15,17 +15,16 @@ import javax.persistence.ManyToOne;
 @Setter
 @Entity
 public class Address {
-@Id
+    @Id
     private Long addressId;
     private String address;
     private String address2;
     private String district;
     @ManyToOne
-    @JoinColumn(name="city_id")
+    @JoinColumn(name = "city_id")
     private City city;
     private String postalCode;
     private String phone;
-
 
 
 }

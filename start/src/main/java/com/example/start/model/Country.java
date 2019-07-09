@@ -13,7 +13,7 @@ import javax.persistence.Id;
 @Getter
 @Entity
 public class Country {
-@Id
+    @Id
     private Long countryId;
     private String country;
 }
